@@ -1,0 +1,33 @@
+{
+  "name": "wiredobjects-otrs",
+  "version": "0.1.0",
+  "author": "wiredobjects",
+  "summary": "Puppet module for managing the Open Ticket Request System (OTRS)",
+  "license": "Apache 2.0",
+  "source": "https://github.com/wiredobjects/puppet-otrs.git",
+  "project_page": "https://github.com/wiredobjects/puppet-otrs",
+  "issues_url": "https://github.com/wiredobjects/puppet-otrs/issues",
+  "dependencies": [
+    {
+      "name": "puppetlabs-stdlib",
+      "version_requirement": ">= 1.0.0"
+    }
+  ],
+  "operatingsystem_support": [
+    {
+      "operatingsystem": "Debian",
+      "operatingsystemrelease": [
+        "6",
+        "7"
+      ]
+    },
+    {
+      "operatingsystem": "RedHat",
+      "operatingsystemrelease": [
+        "5",
+        "6",
+        "7"
+      ]
+    }
+  ]
+}
