@@ -4,6 +4,9 @@
 # It sets variables according to platform.
 #
 class otrs::params {
+  
+  $repository_manage = true
+  
   case $::osfamily {
     'Debian': {
       $package_name = 'otrs'
