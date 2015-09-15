@@ -7,6 +7,7 @@ class otrs::params {
   
   $repository_manage = true
   $dbserver_manage   = true
+  $httpd_manage      = true
   
   case $::osfamily {
     'Debian': {
