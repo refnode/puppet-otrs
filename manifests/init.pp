@@ -11,7 +11,7 @@ class otrs (
   
   $repository_manage = $::otrs::params::repository_manage,
   $dbserver_manage   = $::otrs::params::dbserver_manage,
-  $httpd_manage      = $::otrs::params::httpd_manage
+  $httpd_manage      = $::otrs::params::httpd_manage,
   $package_name      = $::otrs::params::package_name,
   $service_name      = $::otrs::params::service_name,
 
