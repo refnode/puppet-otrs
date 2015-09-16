@@ -14,10 +14,12 @@ class otrs (
   $httpd_manage      = $::otrs::params::httpd_manage,
   $package_name      = $::otrs::params::package_name,
   $service_name      = $::otrs::params::service_name,
+  $options_hash      = {},
 
 ) inherits ::otrs::params {
 
-  # validate parameters here
+  $options = merge($otrs::params::options_defaults, $options_hash)
+  
   class { '::otrs::repository': } ->
   class { '::otrs::dbserver': } ->
   class { '::otrs::httpd': } ->

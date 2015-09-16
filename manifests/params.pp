@@ -13,9 +13,16 @@ class otrs::params {
     'RedHat', 'Amazon': {
       $package_name = 'otrs'
       $service_name = 'otrs'
+      $otrs_home    = '/opt/otrs'
     }
     default: {
       fail("${::operatingsystem} not supported")
     }
+  }
+  
+  $options_defaults  = {
+    otrs_home                  => $otrs_home,
+    otrs_user                  => 'otrs',
+    otrs_group                 => 'apache',
   }
 }
