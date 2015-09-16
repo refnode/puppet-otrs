@@ -10,10 +10,6 @@ class otrs::params {
   $httpd_manage      = true
   
   case $::osfamily {
-    'Debian': {
-      $package_name = 'otrs'
-      $service_name = 'otrs'
-    }
     'RedHat', 'Amazon': {
       $package_name = 'otrs'
       $service_name = 'otrs'
